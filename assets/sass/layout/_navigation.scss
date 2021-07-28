@@ -1,0 +1,75 @@
+.navigation {
+    font-family: $roboto;
+    position: relative;
+    width: 100vw;
+    height: 6rem;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    &__logo {
+        position: absolute;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        font-family: $playfair;
+        font-size: $xx-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+
+        @media (max-width: 768px) {
+            font-size: $x-large;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: $large;
+            padding-top: 2rem;
+            padding-left: .25rem;
+        }
+    }
+
+    &__nav {
+        margin-top: 1rem;
+        width: 96vw;
+        text-align: right;
+    }
+
+    &__nav ul {
+        display: inline-block;
+    }
+
+    &__list {
+        margin-left: 2rem;
+        margin-right: .5rem;
+
+        @media (max-width: 421px) {
+            margin-top: 6px;
+        }
+    }
+
+    &__list li a {
+        padding-right: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @media (max-width: 576px) {
+            font-size: $x-small;
+            padding-right: .25rem;
+        }
+    }
+
+    &__input {
+        border-radius: 30px;
+        text-transform: uppercase;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 1290px) {
+        height: 235vh;
+    }
+
+    @media (max-width: 955px) {
+        height: 460vh;
+    }
+}
+
+/*
+body * {
+    border: 2px solid black;
+}*/
+
+.container-fluid {
+    width: 100vw;
+    height: 200vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 1.4rem;
+
+    @media (max-width: 1290px) {
+        height: 235vh;
+    }
+
+    @media (max-width: 955px) {
+        height: 460vh;
+    }
+
+    @media (max-width: 576px) {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

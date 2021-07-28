@@ -1,0 +1,13 @@
+.footer {
+    height: 30px;
+    font-family: $roboto;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 20;
+    grid-row-end: 21;
+
+    p {
+        text-align: center;
+    }
+}
